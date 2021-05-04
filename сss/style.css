@@ -111,9 +111,16 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
+  border-radius: 3px;
+}
+.link > .icon{
+  width: 20px;
+  height: 20px;
+  background-color: ;
 }
 .lilink {
   color: var(--mail-text-color);
+
 }
 .link:hover,
 .link:focus {
@@ -360,7 +367,7 @@ body {
   height: 117px;
   margin-left: auto;
   margin-right: auto;
-  background-image:url(../logo.img/);
+  background-image:url();
   background-size: cover;
   /* background-position:center; */
 
@@ -374,4 +381,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-image:url(../logo.img/kkk.jpg);
+}
+.logo-footer{
+  display: block;
+  margin-bottom: 30px;
 }
