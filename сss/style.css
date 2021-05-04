@@ -1,0 +1,377 @@
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf) format("woff"),
+    url(../fonts/Raleway/Raleway-VariableFont_wght.ttf) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: "swap";
+}
+:root {
+  --mail-text-color: #757575;
+  --title-text-color: #212121;
+  --dark-bg-text: #ffffff;
+  --alt--tait-color: #2196f3;
+
+  --dark-bg-cl: #2f303a;
+  --secont-bd: #f5f4fa;
+
+  --main-font: "Roboto", sans-serif;
+  --title-font: "Raleway", sans-serif;
+}
+ul {
+  margin: 0px;
+  padding: 0;
+}
+.topa {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+body {
+  font-family: var(--main-font);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--mail-text-color);
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu {
+  display: inline-flex;
+}
+.menu2 {
+  display: flex;
+}
+.fufuter {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: white;
+  text-decoration: none;
+
+  letter-spacing: 0.03em;
+}
+.menu-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.lili:not(:last-child) {
+  margin-right: 30px;
+  width: 270px;
+}
+.lili {
+  width: 270px;
+}
+.page header .conteiner {
+  display: flex;
+  align-items: center;
+}
+.page header .btn {
+  margin-left: 50px;
+}
+.sektion {
+  padding-top: 130;
+  padding-bottom: 130;
+}
+.logo {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-right: 70px;
+}
+.logofu {
+  color: var(--dark-bg-text);
+}
+
+.logo-half {
+  color: var(--alt--tait-color);
+}
+.lolologo {
+  margin-bottom: 20px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+.lilink {
+  color: var(--mail-text-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--alt--tait-color);
+}
+.list {
+  list-style: none;
+}
+.ppoo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: -15px;
+}
+.kiki {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.tutu {
+  padding: 20px 24px;
+}
+.loshka {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.address {
+  font-style: inherit;
+}
+.pypok {
+  margin: 15px;
+  width: 370px;
+}
+.btn {
+  /* видео 5935  */
+
+  background: var(--alt--tait-color);
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-text);
+  background-color: var(--alt--tait-color);
+  margin-top: 40px;
+}
+.btn2 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+  background-color: var(--dark-bg-text);
+}
+.page-title {
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-text);
+  max-width: 696px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+.card-set {
+  display: flex;
+}
+.item:not(:last-child) {
+  margin-right: 30px;
+}
+.item {
+  margin-top: 30px;
+}
+.ponchik-titl {
+  font-family: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.Nigers-title {
+  font-family: var(--title-text-color: #212121;);
+  font-size: 36px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+}
+.title-Li {
+  font-family: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+}
+.copchik {
+  text-align: center;
+}
+.egorsps {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.egorgamno {
+  padding-top: 94px;
+}
+.tvari {
+  background-color: var(--secont-bd);
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.dark {
+  background-color: var(--dark-bg-cl);
+  padding: 200px 0;
+}
+.dark-footer {
+  background-color: var(--dark-bg-cl);
+  padding: 60px 0;
+}
+.footer5 {
+  margin-bottom: 9px;
+}
+.Text {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-font: );
+}
+
+.knopka {
+  font-family: var(--main-font);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--link-color);
+  margin-right: 8px;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  border: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.knopka:hover {
+  background-color: #2196f3;
+  color: var(--dark-bg-text);
+}
+
+.zagolovok {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.texta {
+  margin: 0px;
+}
+.koko {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.novu {
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.marbo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.turok {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.turok2 {
+  list-style-type: none;
+}
+.obnyl {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.displey {
+  display: inline-flex;
+  margin-right: 6px;
+}
+.mp {
+  margin: 0;
+  padding: 0;
+}
+.dsfhil {
+  border-radius: ;
+  border: bottom 4px;
+  border: left 24px;
+}
+.verx {
+  margin-bottom: 10px;
+}
+.tvari2 {
+  margin-top: 30px;
+}
+.tvari3 {
+  margin-top: 10px;
+}
+.box {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: var(--dark-bg-text);
+  border-radius: 0px 0px 4px 4px;
+}
+.box2 {
+  background: var(--dark-bg-text);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+.overlay {
+  max-width: 1600px;
+  height: 117px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:url(../logo.img/);
+  background-size: cover;
+  /* background-position:center; */
+
+}
+
+}
+
+.hero {
+  max-width: 1600px;
+  height: 117px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:url(../logo.img/kkk.jpg);
+}
