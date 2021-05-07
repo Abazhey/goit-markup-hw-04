@@ -362,14 +362,14 @@ body {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-.overlay {
+/* .overlay {
   max-width: 1600px;
   height: 117px;
   margin-left: auto;
   margin-right: auto;
   background-image:url();
   background-size: cover;
-  /* background-position:center; */
+  background-position:center; */
 
 }
 
@@ -380,7 +380,7 @@ body {
   height: 117px;
   margin-left: auto;
   margin-right: auto;
-  background-image:url(../logo.img/kkk.jpg);
+  background-image:url(../logo.img/kkk\ \(1\).jpg);
 }
 .logo-footer{
   display: block;
