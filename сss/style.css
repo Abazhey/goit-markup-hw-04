@@ -74,9 +74,11 @@ body {
 .page header .conteiner {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid blue;
 }
-.page header .btn {
+.btn {
   margin-left: 50px;
+  border:none;
 }
 .sektion {
   padding-top: 130;
@@ -245,6 +247,13 @@ body {
 .dark {
   background-color: var(--dark-bg-cl);
   padding: 200px 0;
+  background: url(../img/kkk\ \(1\).jpg);
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-position:center; 
+  background-size: cover; */
 }
 .dark-footer {
   background-color: var(--dark-bg-cl);
@@ -380,9 +389,40 @@ body {
   height: 117px;
   margin-left: auto;
   margin-right: auto;
-  background-image:url(../logo.img/kkk\ \(1\).jpg);
+  background-image:url(../img/kkk\ \(1\).jpg);
 }
 .logo-footer{
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.social-icons{
+  display:flex;
+ justify-content: center; 
+list-style: none;
+}
+.social-icons-svg{
+  width: 20px;
+  height: 20px;
+fill: #AFB1B8;  
+}
+.social-icons-link:hover, .social-icons-link:focus {
+  background-color: var(--alt--tait-color);
+
+}
+.social-icons-link:hover .social-icons-svg, .social-icons-link:focus .social-icons-svg{
+  fill: white;
+}
+
+.social-icons-item:not(:last-child){
+margin-right: 10px;
+}
+.social-icons-link{
+ display: flex;
+align-items: center;
+justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  
 }
