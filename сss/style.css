@@ -68,8 +68,7 @@ body {
   margin-right: 30px;
   width: 270px;
 }
-.lili {
-  width: 270px;
+
 }
 .page header .conteiner {
   display: flex;
@@ -122,9 +121,11 @@ body {
 }
 .lilink {
   color: var(--mail-text-color);
-
 }
-.link:hover,
+.lilink:hover{
+   color: var(--alt--tait-color);
+}
+
 .link:focus {
   color: var(--alt--tait-color);
 }
@@ -353,6 +354,7 @@ body {
 }
 .verx {
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 .tvari2 {
   margin-top: 30px;
@@ -365,6 +367,7 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background: var(--dark-bg-text);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 .box2 {
   background: var(--dark-bg-text);
@@ -423,6 +426,50 @@ align-items: center;
 justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
+  border-radius: 50%; 
+}
+.prisoidinaites{
+color:white;
+font-family:var(--main-font) ;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.cic{
+  /* content: ; */
+  width: 270px;
+  height: 120px;
+  
+  /* display:block;
+  background-image: url(../icons/symbol-defs.svg#icon-Vector-1);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:contain;
+  background-color: #F5F4FA; 
+   */
   
 }
+.klients{
+  color: var(--title-text-color);
+  align-items: center;
+  text-align: center;
+}
+   .tolik{
+     display: flex;
+     
+   }
+   .margin{
+     margin-right: 70px;
+   }
+   .topch{
+      display:flex;
+ justify-content: center; 
+list-style: none;
+margin-right: 10px;
+   }
+   .topch:hover.social-icons-svg, .topch:hover.social-icons-svg:focus .social-icons-svg{
+      fill: rgba(255, 255, 255, 0.1);;
+   }
