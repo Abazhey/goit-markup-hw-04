@@ -67,6 +67,7 @@ body {
 .lili:not(:last-child) {
   margin-right: 30px;
   width: 270px;
+  
 }
 
 }
@@ -121,6 +122,8 @@ body {
 }
 .lilink {
   color: var(--mail-text-color);
+  display: flex;
+  align-items: center;
 }
 .lilink:hover{
    color: var(--alt--tait-color);
@@ -438,26 +441,31 @@ line-height: 16px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 }
-.cic{
+.cic::before{
   /* content: ; */
-  width: 270px;
+  /* width: 70px;
   height: 120px;
   
-  /* display:block;
+   display:block;
   background-image: url(../icons/symbol-defs.svg#icon-Vector-1);
   background-repeat: no-repeat;
   background-position:center;
   background-size:contain;
-  background-color: #F5F4FA; 
-   */
-  
+  background-color: #F5F4FA;  */
+}
+.lili2::before{
+  width: 270px;
+  background-image: url(../icons/icomoon\ \(2\)/.svg)
+  content: ;
+   display: block;
+
 }
 .klients{
   color: var(--title-text-color);
   align-items: center;
   text-align: center;
 }
-   .tolik{
+   .tok{
      display: flex;
      
    }
@@ -469,7 +477,62 @@ text-transform: uppercase;
  justify-content: center; 
 list-style: none;
 margin-right: 10px;
+
+height: 44px;
+    
+    align-items: center;
+   
    }
    .topch:hover.social-icons-svg, .topch:hover.social-icons-svg:focus .social-icons-svg{
       fill: rgba(255, 255, 255, 0.1);;
    }
+    .social-link-icons2{
+fill: #ffffff;
+
+  background-color:250ms;
+  border-radius: 50%;
+   }
+   .social-icons-svgg{
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+   }
+   .partners{
+     display: flex;
+    justify-content: space-between;
+   }
+   .icon-link-client {
+    fill: #afb1b8;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+.social-icons-svggg{
+  width: 106px;
+    height: 60px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.egorgamno-thumb{
+  height: 170px;
+  width: 100%;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-icone{
+  fill:currentColor;
+  margin-right: 10px;
+}
+.social-icons-link2{
+  background-color:rgba(255, 255, 255, 0.1);
+  fill : white;
+}
+.social-icons-link2 .social-icons-svg{
+  fill : white;
+}
