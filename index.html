@@ -23,15 +23,15 @@
       <div class="conteiner menu2">
         <nav>
           <a class="logo" href=""><span class="logo-half">Web</span>Studio</a>
-          <ul class="menu list">
-            <li class="menu-item">
-              <a class="link" href="">Студия</a>
+          <ul class="menu list ">
+            <li class="menu-item ">
+              <a class="link slovo linia" href="">Студия</a>
             </li>
-            <li class="menu-item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+            <li class="menu-item ">
+              <a class="link slovo" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="menu-item">
-              <a class="link" href="">Контакты</a>
+            <li class="menu-item ">
+              <a class="link slovo" href="">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -63,7 +63,7 @@
       <section class="dark page header hero" style="text-align: center">
         <div class="conteiner">
           <h1 class="page-title"> Эффективные решения для вашего бизнеса</h1>
-          <button class="btn" type="button">Заказать услугу</button>
+          <button data-open-modal class="btn" type="button" >Заказать услугу</button>
         </div>
       </section>
       <section class="egorgamno">
@@ -133,6 +133,9 @@
                 height="294"
                 alt="Програмист пишет код"
               />
+              <div class="back">
+                <p class="back-text">Десктопные приложения</p>
+              </div>
             </li>
             <li class="team-iten item">
               <img
@@ -140,8 +143,11 @@
                 src="./img/img (1).png"
                 width="370"
                 height="294"
-                alt=""
+                alt="Десктопные приложения"
               />
+                <div class="back">
+                <p class="back-text">Мобильные приложения</p>
+              </div>
             </li>
             <li class="team-iten item">
               <img
@@ -151,6 +157,9 @@
                 height="294"
                 alt="Планшет"
               />
+              <div class="back">
+                <p class="back-text">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -347,7 +356,7 @@
 
 <section class="egorsps">
 <div class="conteiner">
-  <h2 class="Nigers-title marbo">Постоянные клиенты</h2>
+  <h2 class="Nigers-title marbo mb">Постоянные клиенты</h2>
   <ul class="list partners">
     <li class="">
       <a class="icon-link-client"> 
@@ -397,12 +406,13 @@
          
       </section>
     </main>
+   
     <footer class="dark-footer">
       <div class="conteiner tok">
       <div class="margin">
         <!-- Адрес и контакты в футере -->
         <a class="logo logo-footer" >
-          ><span class="logo-half ">Web</span><span class="logofu">Studio</span>
+          <span class="logo-half ">Web</span><span class="logofu">Studio</span>
         </a>
         <address class="address">
           <ul class="turok2">
@@ -468,8 +478,55 @@
                   </a>
                 </li>
               </ul>
+              
       </div>
     </div>
     </footer>
+        <div class="backdrop is-hidden" data-backdrop> 
+          <div class="modal form">
+            <button data-close-modal class="modal-close-btn">X</button>
+             <form class=" js-speaker-form">
+               <h2 class="group-title">Оставьте свои данные, мы вам перезвоним</h2>
+               <div class="form-field">
+              <label for="name">Имя</label>
+              <input type="text" name="name" id="name" autocomplete="on">
+               </div>
+             <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" autocomplete="on">
+            </div>
+             <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail">
+            </div>
+             <div class="form-field">
+            <label for="comment"> Комментарий</label>
+            <textarea class="textarea" placeholder="Оставьте коментарий" name="comment" id="comment" cols="30" rows="10"></textarea>
+              </div>
+               <div class="form-field">
+            <input type="checkbox" name="1" value="dogovor" id="dogovor">
+            <label for="dogovor">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            </div>
+    <button type="submit"> Оставить заявку</button>
+            
+          </form>
+          </div>
+
+          
+        </div>                  
+    
+            
+    <script src="js/js.js"></script>
+    <Script>
+      (() => {
+      document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+      e.preventDefault();
+
+      new FormData(e.currentTarget).forEach((value, name) =>
+        console.log(`${name}: ${value}`),
+      );
+      });
+      })();
+</Script>
   </body>
 </html>

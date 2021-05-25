@@ -62,8 +62,36 @@ body {
 }
 .menu-item:not(:last-child) {
   margin-right: 50px;
+  
 }
+.menu-item{
+  position: relative;
 
+}
+.slovo::after{
+  content: "";
+  left: 0%;
+  height: 4px;
+  background-color: #2196f3;
+  top: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: 21px;
+  opacity: 0;
+}
+.menu-item:hover .slovo::after{opacity: 1;
+}
+.linia::after{
+  content: "";
+  left: 0%;
+  height: 4px;
+  background-color: #2196f3;
+  top: 100%;
+  width: 100%;
+  position: absolute;
+  margin-top: 21px;
+  opacity: 1;
+}
 .lili:not(:last-child) {
   margin-right: 30px;
   width: 270px;
@@ -159,6 +187,7 @@ body {
 .pypok {
   margin: 15px;
   width: 370px;
+  position: relative;
 }
 .btn {
   /* видео 5935  */
@@ -175,6 +204,14 @@ body {
   color: var(--dark-bg-text);
   background-color: var(--alt--tait-color);
   margin-top: 40px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function:linear;
+  transition-property:color;
+}
+.btn:hover:focus{
+  background-color: white;
+  color: #2196f3;
 }
 .btn2 {
   font-weight: bold;
@@ -411,6 +448,7 @@ list-style: none;
   width: 20px;
   height: 20px;
 fill: #AFB1B8;  
+
 }
 .social-icons-link:hover, .social-icons-link:focus {
   background-color: var(--alt--tait-color);
@@ -511,6 +549,12 @@ fill: #ffffff;
     border: 1px solid #afb1b8;
     border-radius: 4px;
 }
+.icon-link-client:hover .social-icons-svggg, .icon-link-client:focus .social-icons-svggg{
+fill:#2196f3;
+}
+.icon-link-client:hover{
+  border:1px solid #2196f3;
+}
 .social-icons-svggg{
   width: 106px;
     height: 60px;
@@ -535,4 +579,136 @@ fill: #ffffff;
 }
 .social-icons-link2 .social-icons-svg{
   fill : white;
+}
+.back{
+  position: relative;
+}
+.back-text{
+font-family:var(--main-font);
+display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    margin-bottom:0px;
+}
+.product-link:hover .rotate{
+  opacity: 1;
+}
+.product-link{
+  display: block;
+}
+.rotate{
+  position: relative;
+    opacity: 0;
+    padding: 63px 24px 63px 24px;
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    height: 294px;
+    transition: transform;
+    
+}
+.rotate-text {
+    color: white;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+/* .backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) rotate(1turn) scale(1); */
+}
+.backdrop {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100% ;
+  background-color: orange;}
+
+.modal{
+  height: 581px;
+  width: 528px;
+  background-color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%) ;
+}
+.backdrop.is-hidden{
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-close-btn{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 96%;
+}
+.textarea{
+  resize: none;
+  Width :448px;
+  Height :120px;
+}
+.form{
+  width:528px;
+  outline: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 39px;
+}
+.form-field{
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field input::placeholder{
+  background: #75757580;
+}
+.group-title{
+   font-family: var(--main-font);
+   color: var(--title-text-color);
+ justify-content: center; 
+align-items: center;
+margin-top: 0;
+ align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  }
+.mb{
+  padding-bottom: 50px;
 }
