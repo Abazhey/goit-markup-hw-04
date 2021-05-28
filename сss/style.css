@@ -22,7 +22,7 @@ ul {
   margin: 0px;
   padding: 0;
 }
-.topa {
+.page-header--pading {
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -46,7 +46,7 @@ body {
 .menu {
   display: inline-flex;
 }
-.menu2 {
+.conteiner-display {
   display: flex;
 }
 .fufuter {
@@ -60,11 +60,11 @@ body {
 
   letter-spacing: 0.03em;
 }
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
   
 }
-.menu-item{
+.menu__item{
   position: relative;
 
 }
@@ -80,7 +80,7 @@ body {
   opacity: 0;
 
 }
-/* .menu-item:hover .slovo::after{opacity: 1;
+/* .menu__item:hover .slovo::after{opacity: 1;
 } */
 .linia::after{
   content: "";
@@ -132,7 +132,16 @@ body {
 .lolologo {
   margin-bottom: 20px;
 }
-
+.menu__link {
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  border-radius: 3px;
+  
+}
 .link {
   text-decoration: none;
   font-family: var(--main-font);
@@ -196,8 +205,6 @@ body {
 
 }
 .btn {
-  /* видео 5935  */
-
   background: var(--alt--tait-color);
   border-radius: 4px;
   padding: 10px 32px;
@@ -299,7 +306,7 @@ body {
 .dark {
   background-color: var(--dark-bg-cl);
   padding: 200px 0;
-  background: url(../img/kkk\ \(1\).jpg);
+  background: url(../img/kkk\ \(1\).jpg); /* "Создать линейный градиент" */
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -506,11 +513,13 @@ text-transform: uppercase;
   background-color: #F5F4FA;  */
 }
 .lili2::before{
+  content: "";
   width: 270px;
-  background-image: url(../icons/icomoon\ \(2\)/.svg)
-  content: ;
+  
    display:block;
-
+}
+.lili2{
+  width: 270px;
 }
 .klients{
   color: var(--title-text-color);
@@ -656,7 +665,7 @@ fill:#2196f3;
   left: 50%;
   transform: translate(-50%, 100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+background: #2196f3;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -736,6 +745,7 @@ fill:#2196f3;
   margin-bottom: 28px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .form-field input::placeholder{
