@@ -151,6 +151,15 @@ body {
   color: var(--title-text-color);
   border-radius: 3px;
 }
+.margin-link{
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+  border-radius: 3px;
+}
 .link > .icon{
   width: 20px;
   height: 20px;
@@ -288,6 +297,24 @@ body {
   text-align:center;
   font-weight: 600;
 }
+.slaves-title-Li{
+    font-family: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align:center;
+  font-weight: 500;
+}
+.title-Lion{
+   font-family: var(--title-text-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align:center;
+  font-weight: 700;
+}
 .copchik {
   text-align: center;
 }
@@ -298,7 +325,9 @@ body {
 .egorg {
   padding-top: 94px;
 }
-.tvari {
+
+}
+.slaves{
   background-color: var(--secont-bd);
   padding-bottom: 94px;
   padding-top: 94px;
